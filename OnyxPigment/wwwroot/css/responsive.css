@@ -1,0 +1,428 @@
+@media (min-width: 320px) and (max-width: 421px) {
+    .ManiHeader .container-fluid {
+        padding: 0 10px;
+    }
+
+    .NavLogo img {
+        max-height: 35px !important;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .ManiHeader .navbar {
+        padding: 10px 0px 10px 0;
+    }
+
+    .headingBar h2 {
+        font-size: 28px !important;
+    }
+
+    .Loader11 h1 {
+        font-size: 20px !important;
+    }
+
+    .DescriptionTabs .nav-tabs .nav-link {
+        width: 100% !important;
+    }
+
+    .productDescription h3 {
+        font-size: 24px;
+    }
+
+    .squareBlock {
+        display: none;
+    }
+
+    .customDropdown a.nav-link {
+        width: auto;
+    }
+
+    .customDropdown {
+        min-width: auto;
+    }
+
+    .footerDesign {
+        right: -200px;
+    }
+
+
+    /*.NavLogo img {
+            max-height: 40px !important;
+        }*/
+}
+
+@media (max-width: 767px) {
+    .section-gap {
+        padding: 70px 0;
+    }
+
+    p, .ManiHeader .navbar ul li a {
+        font-size: 17px;
+    }
+
+    .goog-te-gadget .goog-te-combo {
+        font-size: 14px;
+    }
+
+    .ManiHeader {
+        position: inherit;
+    }
+
+    .breadcrumbSection {
+        padding: 50px 0 40px 0 !important;
+    }
+
+    .Loader11 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .LoaderSection img {
+        max-height: 80px;
+    }
+
+    .smallLogo::before {
+        display: none;
+    }
+
+    .smallLogo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Loader11 {
+        gap: 10px
+    }
+
+        .Loader11 h1 {
+            font-size: 28px;
+            min-width: auto;
+        }
+
+    .HomeSlider .carousel-item img {
+        min-height: 250px;
+    }
+
+    .triangleBottom, .AboutImageSectiob .triangleBottom, .playPauseBtn, .contactCard .triangleBottom, .breadcrumbRight .triangleBottom {
+        height: 50px;
+        width: 50px;
+    }
+
+    .AboutuseInnerLeft .nav-tabs {
+        justify-content: center;
+    }
+
+    .HeroImage img {
+        max-height: max-content
+    }
+
+    .ourUSP {
+        padding: 50px;
+    }
+
+    .workFlowDescription {
+        margin-right: 0px;
+    }
+
+    .DescriptionTabs .nav-tabs .nav-link {
+        width: calc(50% - 10px);
+    }
+
+    .ImageTestimonial {
+        display: none;
+    }
+
+    .productDescription {
+        padding: 20px 15px;
+    }
+
+    .prodcutImage img {
+        height: auto;
+    }
+
+    .certifateArea {
+        margin-bottom: 15px;
+    }
+
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+    }
+
+        .whatsapp-button i {
+            font-size: 26px;
+        }
+
+    .BackToTop a {
+        height: 45px;
+        width: 45px;
+        line-height: 1.8;
+    }
+
+    .breadcrumbRight img {
+        max-height: max-content !important;
+    }
+
+    .contactCard {
+        padding: 25px;
+    }
+
+        .contactCard ul li a {
+            word-break: break-word;
+            font-size: 17px;
+        }
+
+    .footerDesign {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .QuickLinks ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .QuickLinks ul li {
+            margin-bottom: 10px;
+            width: calc(50% - 10px);
+        }
+}
+
+@media (max-width: 991px) {
+    .row {
+        margin: 0 !important;
+    }
+
+    .ManiHeader .navbar-toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+    }
+
+
+
+    /*.NavLogo img {
+        max-height: 60px !important;
+    }*/
+
+    .DescriptionTabs .nav-tabs .nav-link {
+        width: calc(33.33% - 10px);
+    }
+
+    .aboutRight {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .ImageLayers img {
+        height: auto;
+    }
+
+    .HomeSlider .carousel-control-prev, .HomeSlider .carousel-control-next {
+        display: none;
+    }
+
+    .aboutRightInner {
+        display: block;
+    }
+
+    .headingBar h2 {
+        font-size: 36px;
+    }
+
+    .carousel-indicators {
+        display: inline-flex;
+    }
+
+    .headingBar, .TesimonialRight .headingBar {
+        margin-bottom: 25px;
+    }
+
+    .about-year {
+        margin-top: 25px;
+        grid-row-gap: 30px;
+    }
+
+    .productDescription h4, .productDesk h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .OnyxButton a, .contactButton {
+        padding: 15px 25px;
+    }
+
+    .productBox {
+        margin-bottom: 30px;
+    }
+
+    .factoryVideo video {
+        height: auto;
+    }
+
+    .playPauseBtn {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .TestimonialSection .row {
+        flex-direction: column-reverse;
+    }
+
+    .TesimonialRight .headingBar p, .TesimonialRight {
+        text-align: left;
+    }
+
+    .client-item-wrap {
+        justify-content: start;
+    }
+
+    .reviewSection {
+        margin-top: 50px;
+    }
+
+        .reviewSection .owl-nav {
+            position: inherit;
+            margin-top: 0;
+            text-align: center;
+        }
+
+    .FooterHeader {
+        margin-top: 50px
+    }
+
+    .footerSection .row .col-lg-4:nth-child(1) .FooterHeader {
+        margin-top: 0px
+    }
+
+    .subfooter p, .subfooter a {
+        text-align: center;
+    }
+
+    .pull-left {
+        margin-bottom: 10px;
+    }
+
+    .HomeSlider .carousel-caption {
+        display: none;
+    }
+
+    .breadcrumbSection {
+        padding: 150px 0 100px 0;
+    }
+
+    .breadcrumbRight {
+        position: initial;
+    }
+
+    .aboutInner {
+        margin-top: 0;
+    }
+
+    .breadcrumbSection .headingBar {
+        min-height: auto;
+    }
+
+    .breadcrumbRight img {
+        max-height: 450px;
+    }
+
+    .contactCard {
+        margin-right: 0px;
+    }
+
+    .formSection {
+        padding-left: 0px;
+        margin-top: 50px;
+    }
+
+    .arrow-animated-up, .FlotingDots {
+        display: none
+    }
+
+    .certifateArea h3 {
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+
+    .ManiHeader .navbar ul li.dropdown {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-gap, .footerSection {
+        padding: 70px 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ManiHeader {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .headingBar h2 {
+        font-size: 36px;
+    }
+
+    .breadcrumbRight img {
+        max-height: 500px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .WrapperContainer {
+        max-width: 1250px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /*.NavLogo img {
+            max-height: 45px !important;
+        }*/
+
+    .ManiHeader .navbar ul li {
+        padding-right: 15px !important;
+    }
+}
+
+@media (max-width: 1399px) {
+    .ManiHeader .navbar {
+        padding: 10px 0;
+    }
+
+        .ManiHeader .navbar ul li {
+            padding-right: 20px;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1062px) {
+    .DescriptionTabs .nav-tabs .nav-link {
+        min-width: auto;
+    }
+
+    .ManiHeader .navbar ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .NavLogo img {
+        max-height: 48px;
+    }
+
+    .ManiHeader.fixed .NavLogo img {
+        max-height: 45px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .HomeSlider .carousel-caption {
+        right: 20px;
+    }
+}

@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "Contact ONYX Pigment PVT. LTD. | B2B Pigment Manufacturer in India";
+    ViewBag.MetaDescription = "Get in touch with ONYX Pigment PVT. LTD. – a global pigment supplier from Gujarat, India. Contact via Phone, Email, or WhatsApp for B2B inquiries.";
+    ViewBag.MetaKeywords = "Contact ONYX Pigment PVT. LTD., Pigment Manufacturer Gujarat, Industrial Pigments India, B2B Pigment Exporter, Pigment Supplier Contact";
+}
+
+<section class="breadcrumbSection">
+    <div class="arrow-animated-up">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="WrapperContainer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="headingBar">
+                        <p><a href="@Url.Action("index", "Home")">Home</a> <i class="fas fa-angle-right"></i> Contact us </p>
+                        <h2>Your Questions, Our Answers</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="breadcrumbRight">
+                        <img src="~/images/icons/bottomtriangle.png" class="triangleBottom">
+                        <img src="~/images/contactus.jpg" class="img-fluid" alt="Contact Us Image" loading="lazy" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="aboutInner section-gap">
+    <img src="~/images/icons/bottomtriangle.png" class="triangleBottom">
+
+    <div class="WrapperContainer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contactCard">
+                        <img src="~/images/icons/bottomtriangle.png" class="triangleBottom">
+                        <h2>Visit our industry</h2>
+                        <ul>
+                            <li><a href="https://maps.app.goo.gl/DDLgps7GdnarnGYP9" target="_blank"><i class="fas fa-map-marker-alt"></i>Plot No. 8/19 &amp; 20, Opp. Sun Pharma, Panoli Industrial Estate, Panoli, Bharuch, Gujarat - 394115</a></li>
+                            <li><a href="mailto:vinod@onyxchemtrade.com"><i class="fas fa-envelope"></i>vinod@onyxchemtrade.com</a></li>
+                            <li><a href="mailto:info@onyxchemtrade.com"><i class="fas fa-envelope"></i>info@onyxchemtrade.com</a></li>
+                            @* <li><a href="mailto:markand@onyxchemtrade.com"><i class="fas fa-envelope"></i>markand@onyxchemtrade.com</a></li> *@
+                            <li><a href="mailto:sales@onyxchemtrade.com"><i class="fas fa-envelope"></i>sales@onyxchemtrade.com</a></li>
+                            <li><a href="tel:+919000809700"><i class="fas fa-phone-alt"></i>+91 90008 09700</a> | <a href="tel:+919777772837">+91 97777 72837</a> | <a href="tel:+919777772857">+91 97777 72857</a></li>
+                            <li><a href="https://wa.me/+919000809700"><i class="fab fa-whatsapp"></i>+91 90008 09700</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ContactBox section-gap">
+    <div class="WrapperContainer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mapArea">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.8912943672876!2d73.00332747506155!3d21.551105469633697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be02300014026d1%3A0xa6b558871dc1bcff!2sONYX%20PIGMENTS%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1751986276728!5m2!1sen!2sin" width="100%" height="530" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="formSection">
+                        <div class="headingBar">
+                            <h2>We’re Just a Message Away!</h2>
+                        </div>
+                        <form class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group floating-label-group">
+                                    <input type="text" class="form-control floating-input" id="Name" required>
+                                    <label for="Name" class="floating-label">Name <span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group floating-label-group">
+                                    <input type="text" class="form-control floating-input" id="CompanyName" required>
+                                    <label for="CompanyName" class="floating-label">Company Name <span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group floating-label-group">
+                                    <input type="email" class="form-control floating-input" id="EmailAddress" required>
+                                    <label for="EmailAddress" class="floating-label">Email Address <span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group floating-label-group">
+                                    <input type="number" class="form-control floating-input" id="MobileNumber" aria-describedby="emailHelp" required>
+                                    <label for="MobileNumber" class="floating-label">Mobile Number <span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group floating-label-group">
+                                    <textarea class="form-control floating-input" id="Message" rows="3"></textarea>
+                                    <label for="Message" class="floating-label">Message</label>
+                                </div>
+                            </div>
+                            @if (TempData["Success"] != null)
+                            {
+                                <div class="alert alert-success">@TempData["Success"]</div>
+                            }
+                            @if (TempData["Error"] != null)
+                            {
+                                <div class="alert alert-danger">@TempData["Error"]</div>
+                            }
+                        </form>
+                        <div class="OnyxButton">
+                            <button class="contactButton">Send Message<i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="@Url.Content("~/js/jquery-3.5.1.js")"></script>
+<script>
+    $(document).ready(function(){
+        $('.contactButton').click(function(){
+            SentMail();
+        });
+    });
+
+    function SentMail() {
+        debugger;
+        var mContactUs = {};
+
+        mContactUs.Name = $.trim($("#Name").val());
+
+        debugger;
+        mContactUs.CompanyName = $.trim($("#CompanyName").val());
+
+        debugger;
+        mContactUs.EmailAddress = $.trim($("#EmailAddress").val());
+
+        debugger;
+        mContactUs.MobileNumber = $.trim($("#MobileNumber").val());
+
+        debugger;
+        mContactUs.Message = $.trim($("#Message").val());
+
+        $.ajax({
+            url: '/Home/SentMail',
+            type: 'POST',
+            data: JSON.stringify(mContactUs),
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function(response) {
+                debugger;
+                console.log('Success:', response);
+            },
+            error: function(xhr, status, error) {
+                debugger;
+                console.error('Error:', error);
+            }
+        });
+    }
+</script>

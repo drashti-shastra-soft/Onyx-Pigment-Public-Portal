@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Controllers\Component.razor" />
+    <Content Remove="Views\Home\Faqs.cshtml" />
+    <Content Remove="Views\Home\Termsandcondition.cshtml" />
+    <Content Remove="wwwroot\images\AboutMe.jpg" />
+    <Content Remove="wwwroot\images\AboutusInner.jpg" />
+    <Content Remove="wwwroot\images\Certifications\ISO.png" />
+    <Content Remove="wwwroot\images\ONYXPigment.png" />
+    <Content Remove="wwwroot\images\OnyxWhiter.png" />
+    <Content Remove="wwwroot\images\slider\background1.jpg" />
+    <Content Remove="wwwroot\images\slider\bluedrop.mp4" />
+    <Content Remove="wwwroot\images\slider\Sldier4.jpg" />
+    <Content Remove="wwwroot\images\slider\Slider1.jpg" />
+    <Content Remove="wwwroot\images\slider\Slider3.jpg" />
+    <Content Remove="wwwroot\images\slider\Slider5.jpg" />
+    <Content Remove="wwwroot\images\slider\Slider6.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="EmailTemplate\ToAdminWhenCustomerContactUs.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

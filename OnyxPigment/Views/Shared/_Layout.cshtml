@@ -1,0 +1,417 @@
+﻿@{
+    var canonicalUrl = $"{Context.Request.Scheme}://{Context.Request.Host}{Context.Request.Path}";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="@ViewBag.MetaDescription" />
+    <meta name="keywords" content="@ViewBag.MetaKeywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="@Html.Raw(canonicalUrl)" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="~/css/sitefonts.css" rel="preload" />
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/glightbox.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/ico" sizes="16x16" href="~/onyxicon.ico">
+    @RenderSection("HeadContent", required: false)
+</head>
+
+<body>
+    <div class="" style="visibility:hidden;" id="topcasual"></div>
+    <header class="ManiHeader">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand NavLogo logoSetScreen" href="@Url.Action("index", "Home")">
+                    <img src="~/images/OnyxFullLength.png" class="img-fluid" alt="Onyx Pigment Logo" />
+                    @* <h1>Onyx Pigment</h1> *@
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("index", "Home")">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("about", "Home")">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown">Our Pigment</a>
+                            <div class="dropdown-menu customDropdown">
+                                <a class="nav-link BGGreen" href="@Url.Action("CopperPhthalocyanineGreenPigment", "Home")">Copper Phthalocyanine Green</a>
+                                <a class="nav-link BGBlue" href="@Url.Action("CopperPhthalocyanineBluePigment", "Home")">Copper Phthalocyanine Blue</a>
+                                <a class="nav-link BGRed" href="@Url.Action("CopperPhthalocyanineRedPigment", "Home")">Azo Pigment Red</a>
+                                <a class="nav-link BGYellow" href="@Url.Action("CopperPhthalocyanineYellowPigment", "Home")">Azo Pigment Yellow</a>
+                            </div>
+                            @* <ul class="SubMenyBox">
+                                <li><a class="nav-link" href="@Url.Action("CopperPhthalocyanineGreenPigment", "Home")">Copper Phthalocyanine Green</a></li>
+                                <li><a class="nav-link" href="@Url.Action("CopperPhthalocyanineBluePigment", "Home")">Copper Phthalocyanine Blue</a></li>
+                                <li><a class="nav-link" href="@Url.Action("CopperPhthalocyanineRedPigment", "Home")">Azo Pigment Red</a></li>
+                                <li><a class="nav-link" href="@Url.Action("CopperPhthalocyanineYellowPigment", "Home")">Azo Pigment Yellow</a></li>
+                            </ul> *@
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Contactus", "Home")">Contact Us</a>
+                        </li>
+                        <li>
+                            <div class="translateBar">
+                                <div id="google_translate_element"><i class="fas fa-language"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="footerSection">
+        <img src="~/images/icons/bottomtriangle.png" class="triangleBottom img-fluid">
+        <img src="~/images/OnyxLoader1.png" class="img-fluid footerDesign" />
+        <div class="WrapperContainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="FooterHeader">
+                            <h3>About Onyx Pigment</h3>
+                            <div class="footerContent">
+                                <p>We’re committed to delivering premium-grade pigments backed by technical expertise and reliable service. For inquiries or support, feel free to contact us — our team will get back to you promptly.</p>
+                            </div>
+                            <div class="SocialMediaHandler">
+                                <a href="https://www.facebook.com/" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" class="ig"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank" class="linkdn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://search.google.com/local/writereview?placeid=ChIJ0SZAAQAj4DsR_7zBHYdYtaY" target="_blank" class="gsearch"><i class="fab fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="FooterHeader QuickLinks">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="@Url.Action("About", "Home")"><i class="fas fa-angle-right"></i>About Us</a></li>
+                                <li><a href="@Url.Action("CopperPhthalocyanineGreenPigment", "Home")"><i class="fas fa-angle-right"></i>Copper Phthalocyanine Green</a></li>
+                                <li><a href="@Url.Action("CopperPhthalocyanineBluePigment", "Home")"><i class="fas fa-angle-right"></i>Copper Phthalocyanine Blue</a></li>
+                                <li><a href="@Url.Action("CopperPhthalocyanineRedPigment", "Home")"><i class="fas fa-angle-right"></i>Azo Pigment Red</a></li>
+                                <li><a href="@Url.Action("CopperPhthalocyanineYellowPigment", "Home")"><i class="fas fa-angle-right"></i>Azo Pigment Yellow</a></li>
+                                @*  <li><a href="@Url.Action("Faqs", "Home")"><i class="fas fa-angle-right"></i>FAQs</a></li>
+                                <li><a href="@Url.Action("Termsandcondition", "Home")"><i class="fas fa-angle-right"></i>Terms & Conditions</a></li> *@
+                                <li><a href="@Url.Action("Contactus", "Home")"><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="FooterHeader">
+                            <h3>Contact Information</h3>
+                            <ul>
+                                <li><a href="https://maps.app.goo.gl/DDLgps7GdnarnGYP9" target="_blank"><i class="fas fa-map-marker-alt"></i>Plot No. 8/19 &amp; 20, Opp. Sun Pharma, Panoli Industrial Estate, Panoli, Bharuch, Gujarat - 394115</a></li>
+                                <li><a href="mailto:vinod@onyxpigment.com"><i class="fas fa-envelope"></i>vinod@onyxpigment.com</a></li>
+                                <li><a href="mailto:info@onyxpigment.com"><i class="fas fa-envelope"></i>info@onyxpigment.com</a></li>
+                                @* <li><a href="mailto:markand@onyxpigment.com"><i class="fas fa-envelope"></i>markand@onyxpigment.com</a></li> *@
+                                <li><a href="mailto:sales@onyxpigment.com"><i class="fas fa-envelope"></i>sales@onyxpigment.com</a></li>
+                                <li><a href="tel:+919000809700"><i class="fas fa-phone-alt"></i>+91 90008 09700</a> <span class="text-white">|</span> <a href="tel:+919777772837">+91 97777 72837</a> <span class="text-white">|</span> <a href="tel:+919777772857">+91 97777 72857</a></li>
+                                <li><a href="https://wa.me/+919000809700" target="_blank"><i class="fab fa-whatsapp"></i>+91 90008 09700</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="subfooter">
+        <div class="WrapperContainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 pull-left">
+                        <p translate="no">© <span id="footerDate"></span> ONYX PIGMENT PVT. LTD. | All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 pull-right">
+                        <p b-3j9pea0hfl="" translate="no">
+                            Designed & Powered by <a href="https://www.mitsolutions.in/" target="_blank" translate="no">M iT Solutions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="progress-bar"></div>
+
+    <div class="BackToTop">
+        <a href="#topcasual">
+            <i class="fas fa-long-arrow-alt-up"></i>
+        </a>
+    </div>
+
+    <a href="https://wa.me/+919000809700" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="LoaderSection" id="loderloder">
+        <div class="Loader11">
+            <div class="smallLogo">
+                <img src="~/images/OnyxLoader1.png" class="img-fluid" alt="ONYX PIGMENT PVT. LTD. Loader Image" />
+            </div>
+            @* <h1 class="typed"></h1> *@
+        </div>
+    </div>
+
+    <script src="~/js/jquery-3.5.1.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    <script src="~/js/swiper.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.ripples.js"></script>
+    <script src="~/js/glightbox.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on('load', function () {
+                $('#loderloder').addClass('hidden'); // Add the 'hidden' class to trigger fadeout animation
+            });
+            setTimeout(function () {
+                $('#loderloder').addClass('hidden');
+            }, 1500);
+
+            // $(".typed").typed({
+            //     strings: ["ONYX PIGMENT PVT. LTD."],
+            //     stringsElement: null,
+            //     typeSpeed: 1,
+            //     startDelay: 10,
+            //     backSpeed: 10,
+            //     fadeOut: true,
+            //     backDelay: 50,
+            //     loop: true,
+            //     loopCount: 5,
+            //     showCursor: false,
+            //     cursorChar: "|",
+            //     attr: null,
+            //     contentType: 'html',
+            //     callback: function() {},
+            //     preStringTyped: function() {},
+            //     onStringTyped: function() {},
+            //     resetCallback: function() {}
+            // });
+
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: "en", autoDisplay: false }, "google_translate_element");
+
+                setTimeout(function () {
+                    document.querySelector('.goog-te-combo').firstElementChild.innerHTML = "Translate";
+                }, 1000); // Delayed execution to ensure Google Translate loads first
+            }
+
+
+        });
+    </script>
+
+    <script>
+        //Add fixed Class in Header
+           $(window).scroll(function () {
+               if ($(this).scrollTop() > 100) {
+                   $('.ManiHeader').addClass('fixed');
+               } else {
+                   $('.ManiHeader').removeClass('fixed');
+               }
+           });
+          $('.certifateArea').tooltip({ boundary: 'window' })
+    </script>
+    <script>
+        $('.footerSection, .aboutInner, .ourUSP, .ProductInnerPage').ripples({
+            resolution: 512,
+            dropRadius: 20,
+            perturbance: 0.04,
+        });
+    </script>
+    <script>
+        // Function to update the progress bar width
+        function updateProgressBar() {
+            const progressBar = document.getElementById('progress-bar');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            progressBar.style.width = progress + '%';
+        }
+
+        // Add the scroll event listener to the window
+        window.addEventListener('scroll', updateProgressBar);
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll > 50) {
+                $(".BackToTop").css("opacity", "1");
+                $(".BackToTop").css("transform", "translate(0, 0)");
+            } else {
+                $(".BackToTop").css("opacity", "0");
+                $(".BackToTop").css("transform", "translate(0, 50px)");
+            }
+        });
+
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("footerDate").innerHTML = n;
+    </script>
+    <script>
+        var swiper = new Swiper(".ProdutctSlider", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: false,
+            },
+            breakpoints: {
+                767: {
+                slidesPerView: 1,
+                },
+                991: {
+                slidesPerView: 2,
+                },
+                992:{
+                    slidesPerView: 2,
+                },
+                1400:{
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".workFlowSlider", {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+              1299: {
+                slidesPerView: 3,
+              },
+            },
+        });
+    </script>
+
+    <script>
+        $('.reviewSection').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayHoverPause: true, // Pauses on hover
+            autoplayTimeout: 3000, // Adjust speed if needed
+            navText: [
+                '<i class="fas fa-chevron-left"></i>', // Custom Font Awesome left icon
+                '<i class="fas fa-chevron-right"></i>' // Custom Font Awesome right icon
+            ],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+    <script>
+        $('.AllProductImage').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayHoverPause: true, // Pauses on hover
+            autoplayTimeout: 3000, // Adjust speed if needed
+            navText: [
+                '<i class="fas fa-chevron-left"></i>', // Custom Font Awesome left icon
+                '<i class="fas fa-chevron-right"></i>' // Custom Font Awesome right icon
+            ],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+    <script>
+        //Google Translate
+           function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: "en", autoDisplay: false }, "google_translate_element");
+
+            var $googleDiv = $("#google_translate_element .skiptranslate");
+            var $googleDivChild = $("#google_translate_element .skiptranslate div");
+            $googleDivChild.next().remove();
+
+            $googleDiv.contents().filter(function () {
+                return this.nodeType === 3 && $.trim(this.nodeValue) !== '';
+            }).remove();
+        }
+    </script>
+    <script src="~/js/translate.js"></script>
+
+    <script>
+        const video = document.getElementById("video1");
+        const playPauseBtn = document.getElementById("playPauseBtn");
+        const icon = playPauseBtn.querySelector("i");
+
+        playPauseBtn.addEventListener("click", () => {
+            if (video.paused) {
+                video.play();
+                icon.classList.replace("fa-play", "fa-pause");
+            } else {
+                video.pause();
+                icon.classList.replace("fa-pause", "fa-play");
+            }
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                touchNavigation: true,
+                loop: true
+            });
+        });
+    </script>
+    @* @await RenderSectionAsync("Scripts", required: false) *@
+</body>
+</html>
